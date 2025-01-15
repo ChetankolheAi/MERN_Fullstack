@@ -4,8 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form {
+            width: 500px;
+            
+        }
+        label {
+            margin-top: 10px;
+            margin-left: 10px;
+            color: green;
+        }
+        input {
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px;
+        }
+      
+        input[type="radio"]:checked + label{
+            color: red;
+        }
+        input[type="submit"]:checked {
+            color: red;
+        }
+       
+        .container2{
+            border: 10px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-color: aqua;
+        
+
+        }
+        .container2:hover{
+            border-radius: 50%;
+            border-color: red;
+            background-color: aqua;
+        }
+        .container3{
+            background-color: white;
+            text-align: center;
+        }
+        table{
+            border:4px solid black;
+        
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        #heading_of_table td{
+            background-color: rgb(244, 169, 63);
+            font-size: 20px;
+            font-weight: 800;
+        }
+        #body_of_table td{
+            background-color: rgb(244, 200, 139);
+        }
+        #body_of_table td:hover{
+            background-color: rgb(241, 146, 13);
+            font:large;
+
+        }
+        .container_table{
+            display: flex;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            margin: 300px;
+            padding: 50px;
+        }
+    </style>
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
+    <!-- <form action="">
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" id="username">
+            
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" id="password">
+        </div>
+        <input type="radio" id="radio1" name="h1">
+        <label for="radio1">HELLO</label>
+        
+        <input type="radio" id="radio2" name="h1">
+        <label for="radio2">HELLO@</label>
+
+
+        <input type="submit" id="submit">
+
+        
+    </form>
+
+    <div class="container2">
+        <div class="container3">
+            sujal
+        </div>
+    </div> -->
+<div class="container_table">
+    <table>
+        <thead>
+            <tr id="heading_of_table">
+                <td>Name</td>
+                <td>Rollno</td>
+                <td>City</td>
+            </tr>
+        </thead >
+        <tbody  id="body_of_table">
+        <tr>
+            <td>Chetan</td>
+            <td>31</td>
+            <td>Jalgaon</td>
+        </tr>
+        <tr>
+            <td>Chetan</td>
+            <td>31</td>
+            <td>Jalgaon</td>
+        </tr>
+        <tr>
+            <td>Chetan</td>
+            <td>31</td>
+            <td>Jalgaon</td>
+        </tr>
+    </tbody>
+
+    </table>
+</div>
+    
 </body>
 </html>
+
+    

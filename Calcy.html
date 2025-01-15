@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 425px;
+            background-color: rgb(106, 10, 34);
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            width: 400px;
+            margin-right: 20px;
+            background-color: rgba(0, 0, 0, 0.553);
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+        button:hover{
+            background-color: bisque;
+            
+
+        }
+        
+        .display input{
+            width: 378px;
+            padding: 20px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" id="display" placeholder="0.">
+        </div>
+        <div class="buttons">
+       
+           <button id="M+" onclick="">M+</button>
+            <button id="M-" onclick="">M-</button>
+            <button id="mrc" onclick="">MRC</button>
+            <button id="gt" onclick="">GT</button>
+            <button id="c" onclick="">C</button>
+            <button id="seven" onclick="">7</button>
+            <button id="eight" onclick="">8</button>
+            <button id="nine" onclick="">9</button>
+            <button id="div" onclick="">\</button>
+            <button id="four" onclick="">4</button>
+            <button id="four" onclick="">4</button>
+            <button id="five" onclick="">5</button>
+            <button id="six" onclick="">6</button>
+            <button id="multi" onclick="">X</button>
+            <button id="percent" onclick="">%</button>
+            <button id="three" onclick="">3</button>
+            <button id="two" onclick="">2</button>
+            <button id="one" onclick="">1</button>
+            <button id="minus" onclick="">-</button>
+            <button id="root" onclick="">root</button>
+            <button id="zero" onclick="">0</button>
+            <button id="zero_zero" onclick="">00</button>
+            <button id="dot" onclick="">.</button>
+            <button id="add" onclick="">+</button>
+            <button id="equals" onclick="">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
