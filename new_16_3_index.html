@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>To_DO_LIST</h1>
+    <input type="text" id="input1" placeholder="Enter the Course">
+    <button onclick="addcourse()">Add Course</button>
+    <button onclick="Deletecourse()">Delete Course</button>
+
+    <ul id="tasklist">
+       
+
+    </ul>
+</body>
+
+<script>
+    const input = document.getElementById('input1');
+    const task1 = document.getElementById('tasklist');
+
+    function addcourse(){
+        const task = input.value.trim();
+        if(task == ''){
+            alert("The Input can't be Null");
+            return;
+
+        }
+        var listtask = document.createElement("li");
+        listtask.textContent=task ;
+        task1.appendChild(listtask);
+        input.value = ""
+        
+
+    }
+  
+
+function deletecourse() {
+    const lastChild = task1.lastChild;
+    if (lastChild) {
+        lastChild.style.textDecoration = 'line-through';
+    }
+}
+
+
+
+
+</script>
+</html>

@@ -63,29 +63,54 @@
             <button id="M-" onclick="">M-</button>
             <button id="mrc" onclick="">MRC</button>
             <button id="gt" onclick="">GT</button>
-            <button id="c" onclick="">C</button>
-            <button id="seven" onclick="">7</button>
-            <button id="eight" onclick="">8</button>
-            <button id="nine" onclick="">9</button>
-            <button id="div" onclick="">\</button>
-            <button id="four" onclick="">4</button>
-            <button id="four" onclick="">4</button>
-            <button id="five" onclick="">5</button>
-            <button id="six" onclick="">6</button>
-            <button id="multi" onclick="">X</button>
-            <button id="percent" onclick="">%</button>
-            <button id="three" onclick="">3</button>
-            <button id="two" onclick="">2</button>
-            <button id="one" onclick="">1</button>
-            <button id="minus" onclick="">-</button>
+            <button id="c" onclick="number_calcy('C')">C</button>
+            <button id="seven" onclick="number_calcy(7)">7</button>
+            <button id="eight" onclick="number_calcy(8)">8</button>
+            <button id="nine" onclick="number_calcy(9)">9</button>
+            <button id="div" onclick="number_calcy('/')">/</button>
+            <button id="p" onclick="number_calcy()">p</button>
+            <button id="four" onclick="number_calcy(4)">4</button>
+            <button id="five" onclick="number_calcy(5)">5</button>
+            <button id="six" onclick="number_calcy(6)">6</button>
+            <button id="multi" onclick="number_calcy('*')">X</button>
+            <button id="percent" onclick="number_calcy('%')">%</button>
+            <button id="three" onclick="number_calcy(3)">3</button>
+            <button id="two" onclick="number_calcy(2)">2</button>
+            <button id="one" onclick="number_calcy(1)">1</button>
+            <button id="minus" onclick="number_calcy('-')">-</button>
             <button id="root" onclick="">root</button>
-            <button id="zero" onclick="">0</button>
-            <button id="zero_zero" onclick="">00</button>
-            <button id="dot" onclick="">.</button>
-            <button id="add" onclick="">+</button>
-            <button id="equals" onclick="">=</button>
+            <button id="zero" onclick="number_calcy(0)">0</button>
+            <button id="zero_zero" onclick="number_calcy()">00</button>
+            <button id="dot" onclick="number_calcy('.')">.</button>
+            <button id="add" onclick="number_calcy('+')">+</button>
+            <button id="equals" onclick="answer()">=</button>
         </div>
     </div>
+    <script>
+        const number = document.getElementById("four");
+        const number1 = number.innerHTML;
+        const display = document.getElementById("display");
+        
+        let ans = 0;
+
+        function number_calcy(k){
+            if(k == 'C'){
+                display.value = '';
+            }
+            else{
+                
+                display.value = display.value+k;
+            }
+           
+        }
+
+        function answer(){
+            
+            ans = eval(display.value);
+            display.value = ans;
+            
+        }
+;    </script>
     
 </body>
 </html>

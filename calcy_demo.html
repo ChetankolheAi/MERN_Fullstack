@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 4px solid rgb(255, 0, 0);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(137, 43, 226, 0.199);
+        }
+        button
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 50px;
+            color: black;
+            font-size: 20px;
+            background-color: bisque;
+            border: none;
+            border-radius: 10px;
+    
+        }
+        button:hover{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    Number A <input type="text" id="number1"><br>
+    Number B <input type="text" id="number2"><br>
+    
+    <button onclick="ans1('+')">+</button>
+    <button onclick="ans1('-')">-</button>
+    <button onclick="ans1('*')">*</button>
+    <button onclick="ans1('/')">/</button>
+    <button onclick="ans1('%')">%</button><br>
+    Ans:- <input type="text" id="result">
+</body>
+<script>
+    function ans1(k){
+    let num1 = document.getElementById("number1").value;
+    let num2 = document.getElementById("number2").value;
+   
+  
+    switch(k){
+        case "+":
+        {
+            let ans = Number(num1)+Number(num2);
+            document.getElementById("result").value = ans;
+            break;
+        }
+        case '-':
+        {
+            let ans = Number(num1)-Number(num2);
+            document.getElementById("result").value = ans;
+            break;
+        }
+        case '*':
+        {
+            let ans = Number(num1)*Number(num2);
+            document.getElementById("result").value = ans;
+            break;
+        }
+        
+        case '/':
+        {
+            let ans = Number(num1)/Number(num2);
+            document.getElementById("result").value = ans;
+            break;
+        }
+        case '%':
+        {
+            let ans = Number(num1)%Number(num2);
+            document.getElementById("result").value = ans;
+            break;
+        }
+        
+
+    }
+       
+
+    }
+</script>
+</html>
