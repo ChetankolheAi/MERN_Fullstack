@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //Destructing of Array
+    var a= [1,2,3,4]
+
+    var[b,c,d,e,f] = a;
+    console.log(b,c,d,e,f);
+    
+
+    //Destructing of Objects
+    var s  ={
+        name:"Chetan",
+        age:20,
+        city:"Jalgaon"
+    }
+
+    var {age,name} = s;
+    console.log('My name is '+name+' My age is '+age);
+
+    var temp = [1,2,3];
+    var [b,,d]=a
+    console.log(b,d);
+
+            var temp2 ={...temp}; //Spred
+            console.log(temp2);
+
+
+</script>
+</html>

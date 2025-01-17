@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h5,h1{
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url('img/th1111.jpg');
+        
+            background-size: cover;
+           
+        }
+        #btn,#btn1{
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(196, 23, 98);
+            display: block;
+        }
+        #btn:hover,#btn1:hover{
+            color: black;
+            background-color: #ffffff;
+            box-shadow: 0 0 70px rgba(255, 0, 247, 0.855);
+        }
+        #btn1{
+            margin-top: 370px;
+            height: 50px;
+            width: 100px;
+        }
+        .container{
+            border: 2px solid black;
+            
+           margin-top: 50px;
+           margin-right: 50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            height: 100%;
+            width: 700px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(233, 144, 251, 0.855);
+            position: relative;
+            z-index: 2000;
+            display: none;
+       
+            
+        }
+
+        .container:hover{
+            
+            box-shadow: 0 0 50px rgba(212, 0, 255, 0.855);
+        }
+        .dp_name img{
+            border-radius: 0;
+            padding: 12px;
+            margin-left: 20px;
+        }
+        .dp_name{
+            display: flex;
+            margin-top: 10px;
+        }
+        #My_name{
+            margin-top: 60px;
+            font-size: 50px ;
+            color: rgb(255, 255, 255);
+        }
+        .name{
+            margin-left: 30px;
+        }
+        .name h5{
+            margin-left: 10px ;
+    
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            
+        }
+        .history,.rules{
+            border: 2px solid #ddd;
+            display: flex;
+            margin: 30px;
+            border-radius: 10px;
+            height: 220px;
+            background-color: #938e9300;
+            backdrop-filter: blur(100px); 
+            display: none;
+   
+        }
+        .history:hover ,.rules:hover{
+           
+            box-shadow: 0 0 50px rgba(212, 0, 255, 0.855);
+        }
+        .history img,.rules img{
+            border-radius: 10px;
+            margin: 10px;
+        }
+       .history p,.rules p{
+        margin-left: 20px;
+    
+       }
+       .history p span,.rules p span{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+       }
+       .history_btn{
+        margin: 30px;
+        
+       }
+       .history_btn h3{
+        color: white;
+        font-size: large;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border: 7px solid rgb(229, 0, 229);
+        padding: 10px;
+        border-radius: 10px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        background-color: rgb(107, 7, 107);
+       }
+       .input input
+       {
+        margin: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        
+       }
+      
+       .input input:hover{
+        box-shadow: 0 0 50px rgba(212, 0, 255, 0.855);
+       }
+       
+       #side_image1,#side_image2{
+        margin-left: 100px;
+        border: 3px solid white;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative; 
+        z-index: 10;
+        transform: translate(0 , -235px);
+
+       }
+       
+       .container2{
+        width: 500px;
+       }
+       #name{
+        color: white;
+        margin-left: 30px;
+        font-size: 70px;
+        transform: translate(70px , 80px);
+        color:gold
+    
+       }
+       .container3{
+        border: 3px solid white;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+       }
+       .arrow{
+        animation: float-bounce 2s infinite;
+       }
+       @keyframes float-bounce{
+        0% {
+            transform: translatex(0);
+            }
+            50% {
+            transform: translatex(-190px);
+            }
+            100% {
+            transform: translatex(0);
+            }
+       }
+    </style>
+</head>
+<body>
+    <div class="arrow">
+        <img src="img/arrow1.png" alt=""  id="arrow" height="200px" style="transform: translateY(300px);">
+       
+    </div>
+    <button id="btn1" onclick="display_cont()">Click Here</button>
+    <div class="container" id="container" >
+ 
+            <div class="dp_name">
+            <img src="img/okk14.png" alt="" height="180px" width="180px">
+                <div class="name">
+                    <h1 id="My_name">Cricket My Life</h1>
+                    <h5>
+                        "Cricket is not just a game, it's a way of life."
+                    </h5>
+                </div>
+            </div>
+            <hr>
+            <div class="history_btn">
+                <h3>"Do you really want to know about the history of cricket ?"
+
+                </h3>
+                <button id="btn" onclick="btn_none()">History</button>
+            </div>
+            <div class="history">
+                
+                
+                <p style="color: white;"><span>History :-</span><br>In the first half of the 18th Century cricket established itself as a leading sport in London and the south-eastern counties of England. Its spread was limited by the constraints of travel, but it was slowly gaining popularity in other parts of England and Women’s Cricket dates back to the 1745 </p>
+                 <img src="img/cric_history.jpg" alt="" height="200px">
+                
+            </div>
+
+            <div class="history_btn">
+                <h3>"What To Know About Cricket Rules ? "
+
+                </h3>
+                <button id="btn" onclick="btn_none1()">Rules</button>
+            </div>
+            <div class="rules">
+                
+                
+                <p style="color: white;"><span>Rules :-</span><br>1. Two teams, each with 11 players. <br>
+                   
+                    2. The batting team sends two batsmen onto the field. <br>
+                    3. The fielding team sends one bowler to deliver the ball. <br>
+                    4. The batsmen try to score runs by hitting the ball and running. <br>
+                    5. The fielding team tries to get the batsmen out.
+                     </p>
+                 <img src="img/cric_history.jpg" alt="" height="200px">
+                
+            </div>
+            <div class="input">
+                <input type="text" id="email" placeholder=" Enter Your Email_ID" required>
+                <input type="submit" id="submit" onclick="check_email()">
+            </div>
+
+
+     
+    </div>
+    <div class="container2">
+        <img src="img/king.png" alt="" height="70px" style="transform: translate(100px , 160px);" onclick="display_cont()">
+        <h2 id="name">King</h2>
+        <img src="img/ok111.png" alt="" id="side_image1" height="650px" >
+        <img src="img/ok1.png" alt="" id="side_image2" height="650px" onclick="MSD7()">
+    </div>
+
+    
+    
+</body>
+<script>
+    const hist_btn = document.getElementsByClassName('history_btn');
+    const history_text = document.getElementsByClassName('history')[0];
+
+    function btn_none(){
+        
+        console.log("Ok")
+        history_text.style.display = 'flex';
+        
+
+    }
+
+    const email = document.getElementById('email');
+    const submit = document.getElementById('submit');
+    let email_1 = 'Chetankolhe1020@gmail.com'
+    function check_email(){
+        if(email.value == email_1){
+            alert('Correct Email');
+        }
+        else{
+            alert('Sorry Your Entered Email is Wrong')
+        }
+    }
+    const rules_box = document.getElementsByClassName('rules')[0]
+    function btn_none1(){rules_box.style.display ='flex';
+
+    }
+
+    const vk_info1 = document.getElementById("side_image1");
+    const dhoni_info = document.getElementById("side_image2");
+    const name_vk = document.getElementById("name");
+
+    function vk_info(){
+        vk_info1.style.zIndex = '60';
+    }
+ 
+    function MSD7(){
+
+    }
+
+    const cont = document.getElementById('container');
+    const btn2 =document.getElementById('btn1');
+    const arrow1 =document.getElementById('arrow');
+    function display_cont(){
+        cont.style.display = 'block';
+        btn2.style.display = 'none';
+        arrow1.style.display = 'none';
+    }
+
+   
+    
+
+</script>
+</html>

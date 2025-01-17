@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //Promise is an object that represents the eventual completion (or failure) 
+    //of an asynchronous operation and its resulting value
+    var a = new Promise((res,rej) =>{
+        if(true){
+            return res();
+            //return res;
+        }
+        else{
+            return rej();
+            //return rej;
+        }
+    })
+    .then((function(){
+        console.log("Jaay Bho jaay")
+    }))
+
+    .catch((function(){
+        console.log("Hav re Bho")
+    }))
+
+
+
+    //random number
+    var check = new Promise((res,rej) =>{
+        //var age = Math.floor(Math.random()*20);
+        var age = prompt('Enter the Age');34
+        console.log(`The Age is :- ${age}`);
+        if(age >=18){
+            return res();
+        }
+        else{
+            return rej();
+
+        }
+    });
+    //.then check the response of the Promise
+    check
+    .then(function(){
+        console.log("Hav re bho tu Chalu Shaktu Gadi banoyi Ghe Licence")
+    })
+    //.catch check the rejection of promise 
+    .catch(function(){
+        console.log("Not able to Drive")
+    })
+
+</script>
+</html>

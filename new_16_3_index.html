@@ -8,7 +8,7 @@
         button{
             padding: 10px;
             border-radius: 10px;
-            text-decoration: line-through;
+        
         }
     </style>
 </head>
@@ -27,7 +27,7 @@
 <script>
     const input = document.getElementById('input1');
     const task1 = document.getElementById('tasklist');
-
+  
     function addcourse(){
         const task = input.value.trim();
         if(task == ''){
@@ -42,15 +42,24 @@
         
 
     }
-  
+    let a = 0;
+    function Deletecourse(){
+       
+        const children = task1.children;
+        
+        if (a < children.length) {
+            children[a].style.textDecoration = "line-through"; // Apply the style
+            a += 1; 
+        }
+        else{
+            alert('Sorry');
+        }
+       
+    
+        
+        
 
-function deletecourse() {
-    const lastChild = task1.lastChild;
-    if (lastChild) {
-        lastChild.style.textDecoration = 'line-through';
     }
-}
-
 
 
 
